@@ -17,7 +17,7 @@ router.get("/user/list",(req,res) => {
   });
 });
 
-router.post("/user/add", (req,res) => {
+router.post("/add", (req,res) => {
   const body = req.body;
   console.log('body',body);
   res.send({
@@ -28,7 +28,7 @@ router.post("/user/add", (req,res) => {
 })
 
 
-router.post('/user/add',(req,res) => {
+router.post('/add',(req,res) => {
 
 })
 
