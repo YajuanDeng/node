@@ -95,6 +95,20 @@
           "userId": "user-uuid-x"
         }
       ]
+    },
+    {
+      "id": "card-uuid-2",
+      "userId": "user-uuid-2",
+      "text": "the context that want to show",
+      "pictureLink": "https://xxx.com/picture",
+      "like": [
+        {
+          "userId": "user-uuid-3"
+        },
+        {
+          "userId": "user-uuid-4"
+        }
+      ]
     }
   ]
 }

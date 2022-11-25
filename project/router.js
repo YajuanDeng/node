@@ -4,15 +4,18 @@ const router = express.Router();
 // GET users
 // http://localhost/api/users
 
-router.get("/users",async(req,res) => {
-  
+router.get("/users", async (req, res) => {
+try{
   const url = "http://localhost:3000/users"
   const users = await axios.get(url);
-  console.log("users",users.data);
+  console.log("users", users.data);
   res.status(200).json({
-    msg:"get users succeed",
-    data: users.data,
+    msg: "get users succeed",
+    data: users.data
   });
+} catch (error) {
+  res.status(500).send("Server Error");
+}
 });
 
 // GET cards by id
